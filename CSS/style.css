@@ -13,6 +13,7 @@ body{
 .menu-name a {
     color: var(--color-primary);
     text-decoration: none;
+    font-size: 1.7rem;
 }
 ul {
     list-style-type: none;
@@ -119,3 +120,22 @@ ul {
 .contact-button:hover {
     background-color: var(--color-border-hover);
 }
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--color-surface);
+    color: var(--color-text-muted);
+}
+.footer p{
+    margin: 0;
+}
+.footer a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer a:hover {
+    color: var(--color-text);
+}
+

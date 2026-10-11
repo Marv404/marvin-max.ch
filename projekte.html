@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekte – Marvin Schneider</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/colors.css">
+    <link rel="stylesheet" href="/CSS/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+<header class="nav-menu">
+    <p class="menu-name">
+        <a href="https://www.marvin-max.ch">
+            <picture>
+                <source media="(max-width: 700px)" srcset="/assets/monogram-hell-auf-dunkel.svg">
+                <img src="/assets/logo.svg" alt="Marvin Schneider" class="menu-logo">
+            </picture>
+        </a>
+    </p>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="navbar" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a class="nav-active" href="projekte.html">Projekte</a></li>
+                <li><a class="contact-button" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="projects">
+    <section class="projects-intro">
+        <h1 class="about-title">Projekte</h1>
+        <p>
+            Hier sammle ich, woran ich baue und was ich dabei lerne.
+            Nicht alles ist fertig, das gehört dazu.
+        </p>
+    </section>
+
+    <section class="project-grid">
+        <article class="project-card">
+            <div class="project-body">
+                <h2>Diese Webseite</h2>
+                <p>Mein Portfolio, komplett von Hand mit HTML und CSS gebaut.</p>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Git</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/Marv404/marvin-max.ch" target="_blank" rel="noopener noreferrer">Code auf GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card project-card--soon">
+            <div class="project-body">
+                <h2>Kommt bald</h2>
+                <p>Hier entsteht das nächste Projekt.</p>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 &middot; Marvin Schneider</p>
+    <p>
+        <a href="impressum.html">Impressum</a>
+        &middot;
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+    <p class="spruch">Handgemacht mit HTML, CSS &amp; viel Kaffee</p>
+</footer>
+<script src="/js/nav.js"></script>
+</body>
+</html>

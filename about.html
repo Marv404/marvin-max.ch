@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich – Marvin Schneider</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/colors.css">
+    <link rel="stylesheet" href="/CSS/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+</head>
+<body>
+<header class="nav-menu">
+    <p class="menu-name">
+        <a href="https://www.marvin-max.ch">
+            <picture>
+                <source media="(max-width: 700px)" srcset="/assets/monogram-hell-auf-dunkel.svg">
+                <img src="/assets/logo.svg" alt="Marvin Schneider" class="menu-logo">
+            </picture>
+        </a>
+    </p>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="navbar" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="nav-active" href="about.html">Über Mich</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a class="contact-button" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="about">
+    <section class="about-intro">
+        <div class="about-intro-text">
+            <h1 class="about-title">Hallo, ich bin Marvin.</h1>
+            <p>
+                Ich bin IT-Systemtechniker und baue nebenbei Webseiten. Beruflich sorge
+                ich dafür, dass Systeme laufen. In meiner Freizeit baue ich Dinge, die
+                man im Browser sehen kann.
+            </p>
+        </div>
+        <figure class="about-figure">
+            <img src="/assets/Profile%20Pic%20Marvin%20Schneider_digital%20colors%20small.png"
+                 alt="Porträt von Marvin Schneider mit Cap und Brille vor leuchtendem Code" class="about-photo">
+            <figcaption>
+                Bild von <a href="https://thatstner.com/" target="_blank" rel="noopener noreferrer">-TNER</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Was ich mache</h2>
+        <p>
+            Im Alltag kümmere ich mich um Server, Netzwerke, Clients, Support und vieles mehr.
+            und löse Probleme, bevor andere sie bemerken. Dabei habe ich gemerkt, dass
+            mir das Bauen und Gestalten genauso viel Spass macht wie das Betreiben.
+        </p>
+        <p>
+            Darum habe ich angefangen, Webentwicklung zu lernen. Diese Seite ist mein
+            Übungsplatz: Alles hier ist von Hand mit HTML und CSS geschrieben, ohne
+            Baukasten und ohne Framework. Wenn etwas schief aussieht, dann gehört es
+            zum Lernprozess.
+        </p>
+    </section>
+
+    <section class="about-cards">
+        <div class="about-card">
+            <h2>Was ich kann</h2>
+            <ul class="skills">
+                <li>IT-Systemtechnik</li>
+                <li>Netzwerkadministration</li>
+                <li>Serveradministration</li>
+                <li>Clientadministration</li>
+                <li>Linux Server</li>
+                <li>Linux Desktop</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                </ul>
+        </div>
+        <div class="about-card">
+            <h2>Was ich gerade lerne</h2>
+            <ul class="skills skills--learning">
+                <li>Barrierefreies HTML</li>
+                <li>Flexbox &amp; Grid</li>
+                <li>Responsive Design</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ausserhalb des Bildschirms</h2>
+        <p>
+            In meiner Freizeit, schiesse ich Armbrust, mache Blasmusik und bin in der Freiwilligen Feuerwehr
+        </p>
+    </section>
+
+    <section class="about-cta">
+        <p>Du hast eine Frage, ein Projekt oder einfach Lust auf einen Austausch?</p>
+        <a href="kontakt.html" class="hero-button hero-button--primary">Kontakt aufnehmen</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 &middot; Marvin Schneider</p>
+    <p>
+        <a href="impressum.html">Impressum</a>
+        &middot;
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+    <p class="spruch">Handgemacht mit HTML, CSS &amp; viel Kaffee</p>
+</footer>
+<script src="/js/nav.js"></script>
+</body>
+</html>

@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Marvin Schneider</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/colors.css">
+    <link rel="stylesheet" href="/CSS/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 </head>
 <body>
+<header class="nav-menu">
+    <p class="menu-name">
+        <a href="https://www.marvin-max.ch">
+            <picture>
+                <source media="(max-width: 700px)" srcset="/assets/monogram-hell-auf-dunkel.svg">
+                <img src="/assets/logo.svg" alt="Marvin Schneider" class="menu-logo">
+            </picture>
+        </a>
+    </p>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="navbar" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a class="contact-button" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main class="contact">
+    <section class="contact-intro">
+        <h1 class="about-title">Kontakt</h1>
+        <p>
+            Du hast eine Frage, ein Projekt oder einfach Lust auf einen Austausch?
+            Schreib mir, ich melde mich so schnell wie möglich.
+        </p>
+    </section>
+
+    <form class="contact-form" action="https://formspree.io/f/xeaezopy" method="POST">
+        <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="form-field">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="form-field">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <!-- Honeypot gegen Spam-Bots: für Menschen unsichtbar -->
+        <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button type="submit" class="hero-button hero-button--primary form-submit">Nachricht senden</button>
+    </form>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 &middot; Marvin Schneider</p>
+    <p>
+        <a href="impressum.html">Impressum</a>
+        &middot;
+        <a href="datenschutz.html">Datenschutz</a>
+    </p>
+    <p class="spruch">Handgemacht mit HTML, CSS &amp; viel Kaffee</p>
+</footer>
+<script src="/js/nav.js"></script>
 </body>
 </html>

@@ -14,15 +14,28 @@
 </head>
 <body>
     <header class="nav-menu">
-        <p class="menu-name"><a href="https://www.marvin-max.ch">Marvin Schneider</a></p>
-        <nav class="navbar">
-            <ul class="nav-list">
+    <p class="menu-name">
+        <a href="https://www.marvin-max.ch">
+            <picture>
+                <source media="(max-width: 700px)" srcset="/assets/monogram-hell-auf-dunkel.svg">
+                <img src="/assets/logo.svg" alt="Marvin Schneider" class="menu-logo">
+            </picture>
+        </a>
+    </p>
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="navbar" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="nav-list">
+                <li><a class="nav-active" href="index.html">Home</a></li>
                 <li><a href="about.html">Über Mich</a></li>
                 <li><a href="projekte.html">Projekte</a></li>
-                <li><a href="kontakt.html" class="contact-button">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+                <li><a class="contact-button" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
  <section class="hero">
     <h1 class="hero-title">Marvin Schneider</h1>
     <p class="hero-role">IT Systemtechniker  & Web Developer</p>
@@ -45,5 +58,6 @@
         <p class="spruch">Handgemacht mit HTML, CSS &amp; viel Kaffee</p>
     </footer>
 
+<script src="/js/nav.js"></script>
 </body>
 </html>

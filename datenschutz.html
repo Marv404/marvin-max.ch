@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutz – Marvin Schneider</title>
+    <script src="/js/theme.js"></script>
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/colors.css">
     <link rel="stylesheet" href="/CSS/fonts.css">
@@ -17,9 +18,13 @@
 <header class="nav-menu">
     <p class="menu-name">
         <a href="https://www.marvin-max.ch">
-            <picture>
+            <picture class="logo-dark">
                 <source media="(max-width: 700px)" srcset="/assets/monogram-hell-auf-dunkel.svg">
                 <img src="/assets/logo.svg" alt="Marvin Schneider" class="menu-logo">
+            </picture>
+            <picture class="logo-light">
+                <source media="(max-width: 700px)" srcset="/assets/monogram.svg">
+                <img src="/assets/logo-horizontal.svg" alt="Marvin Schneider" class="menu-logo">
             </picture>
         </a>
     </p>
@@ -34,6 +39,7 @@
                 <li><a href="about.html">Über Mich</a></li>
                 <li><a href="projekte.html">Projekte</a></li>
                 <li><a class="contact-button" href="kontakt.html">Kontakt</a></li>
+            <li><button class="theme-toggle" type="button" aria-pressed="false" aria-label="Helles Design aktivieren"><span class="icon-sun" aria-hidden="true">☀</span><span class="icon-moon" aria-hidden="true">☾</span></button></li>
         </ul>
     </nav>
 </header>

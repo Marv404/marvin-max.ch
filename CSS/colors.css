@@ -13,7 +13,45 @@
     --color-primary-dark: #627FE0;
     --color-primary-light: #C7D2FF;
 
+    /* Akzente */
+    --color-accent-violet: #B58CFF;
+    --color-accent-pink: #FF7AC6;
+    --color-accent-cyan: #5EEAD4;
+    --color-accent-amber: #FFC857;
+    --gradient-brand: linear-gradient(90deg, var(--color-primary), var(--color-accent-violet), var(--color-accent-pink));
+    --gradient-brand-soft: linear-gradient(135deg, rgba(140, 166, 255, 0.18), rgba(181, 140, 255, 0.12) 50%, rgba(255, 122, 198, 0.12));
+
     /* UI */
     --color-border: #26314A;
     --color-border-hover: #3A4968;
+}
+
+/* Helles Farbschema */
+:root[data-theme="light"] {
+    color-scheme: light;
+
+    --color-background: #F6F7FB;
+    --color-surface: #FFFFFF;
+
+    --color-text: #0F1420;
+    --color-text-muted: #4B5568;
+
+    --color-primary: #3F5BD9;
+    --color-primary-hover: #3049B8;
+    --color-primary-dark: #2538A0;
+    --color-primary-light: #6C85F0;
+
+    --color-accent-violet: #7C3AED;
+    --color-accent-pink: #D6247F;
+    --color-accent-cyan: #0E8F7E;
+    --color-accent-amber: #B7791F;
+
+    --color-border: #D5DAE6;
+    --color-border-hover: #AEB6C9;
+}
+:root:not([data-theme]) {
+    color-scheme: dark;
+}
+:root[data-theme="dark"] {
+    color-scheme: dark;
 }
